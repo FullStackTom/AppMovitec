@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="413dp"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#90C4F6">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/usuarios" />
+
+            <TextView
+                android:id="@+id/colNombre"
+                android:layout_width="238dp"
+                android:layout_height="match_parent"
+
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/colEditar"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:onClick="clickTablaEditarempleado"
+                app:srcCompat="@drawable/ic_baseline_edit_24"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/colBorrar"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="clickTablaBorrarempleado"
+                app:srcCompat="@drawable/borrar"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#BAD3EC">
+
+            <TextView
+                android:id="@+id/colTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/colEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</TableRow>
